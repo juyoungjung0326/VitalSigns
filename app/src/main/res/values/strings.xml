@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">VitalSigns</string>
+    <string name="add_vital">Add Daily Vitals</string>
+    <string name="view_vital_label">View Daily Vitals</string>
+    <string name="vital_name">Daily Vitals Form</string>
+    <string name="temp_title_form">Enter Your Body Temperature (Farenheit)</string>
+    <string name="pulse_label">Enter Your Heart Rate (BPM)</string>
+    <string name="bp_title">Enter Your Blood Pressure (mm/Hg)</string>
+    <string name="glucose_title">Enter Your Blood Glucose Level (mg/dL)</string>
+    <string name="chol_title">Enter Your Cholesterol Level (mg/dL)</string>
+    <string name="vital_button">Submit</string>
+    <string name="date_title">Please Enter the Date (yyyy-mm-dd)</string>
+    <string name="refresh_title">Refresh</string>
+</resources>
