@@ -13,6 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.VitalSigns">
+        <activity android:name=".find_pulse"></activity>
         <activity android:name=".MainScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,10 +25,10 @@
             android:name=".phone_sms"
             android:label="Calls/Messaging"
             android:parentActivityName=".Contacts" />
-        <activity android:name=".view_contacts"
+        <activity
+            android:name=".view_contacts"
             android:label="View Contacts"
-            android:parentActivityName=".Contacts"
-            />
+            android:parentActivityName=".Contacts" />
         <activity
             android:name=".create_contact"
             android:label="Create Contact"
@@ -44,11 +45,10 @@
             android:name=".AddVitalsActivity"
             android:label="Add Vitals"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".MainActivity"
             android:label="Vitals"
-            android:parentActivityName=".MainScreen">
-
-        </activity>
+            android:parentActivityName=".MainScreen"></activity>
     </application>
 
 </manifest>

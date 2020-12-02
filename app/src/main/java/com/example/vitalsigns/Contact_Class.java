@@ -40,8 +40,16 @@ public class Contact_Class {
 
     @Override
     public String toString() {
-        return
-                contact_name + '\n' +
-                contact_number;
-    }
+        if(contact_number.length() > 10 || contact_number.length() < 10)
+        {
+            return contact_name + '\n' + contact_number;
+        }
+        else {
+            return
+                    contact_name + '\n' +
+                            "(" + contact_number.charAt(0) + contact_number.charAt(1) + contact_number.charAt(2) +
+                            ") " + contact_number.charAt(3) + contact_number.charAt(4) + contact_number.charAt(5) + "-"
+                            + contact_number.charAt(6) + contact_number.charAt(7) + contact_number.charAt(8) + contact_number.charAt(9);
+        }
+        }
 }

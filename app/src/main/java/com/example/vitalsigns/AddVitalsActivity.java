@@ -54,4 +54,9 @@ public class AddVitalsActivity extends AppCompatActivity {
 
 
     }
+    public void launchHelp(View v)
+    {
+        Intent i = new Intent(this, find_pulse.class);
+        startActivity(i);
+    }
 }
