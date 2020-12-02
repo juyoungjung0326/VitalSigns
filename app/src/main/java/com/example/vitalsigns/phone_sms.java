@@ -56,9 +56,10 @@ public class phone_sms extends AppCompatActivity {
     {
         String number = mEditTextNumber.getText().toString();
         String message = composed_message.getText().toString();
-        if(number.trim().length() == 0 || message.trim().length() == 0)
+        if(number.trim().length() <= 0 || message.trim().length() <= 0)
         {
             Toast.makeText(this,"Make Sure All Fields are Filled",Toast.LENGTH_SHORT).show();
+            return;
         }
 
         if(checkPermissions(Manifest.permission.SEND_SMS))
