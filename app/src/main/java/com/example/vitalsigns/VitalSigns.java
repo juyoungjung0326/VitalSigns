@@ -25,12 +25,12 @@ public class VitalSigns {
     @Override
     public String toString() {
         return
-                "Date = " + date_field + '\n' +
-                "temperature = " + temperature +
-                "\npulse = " + pulse +
-                "\nbloodPressure = " + bloodPressure + '\n' +
-                "glucoseLevel = " + glucoseLevel + '\n' +
-                "cholesterol = " + cholesterol;
+                "Date: " + date_field + '\n' +
+                "temperature: " + temperature + "\u2109" +
+                "\nPulse: " + pulse + " BPM" +
+                "\nBlood Pressure: " + bloodPressure + " mm/Hg\n" +
+                "Glucose Level: " + glucoseLevel + " mg/dL\n" +
+                "Cholesterol: " + cholesterol + " mg/dL";
     }
 
     public int getId() {

@@ -4,29 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainScreen">
 
     <Button
-        android:id="@+id/addVitals"
+        android:id="@+id/vital_menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="128dp"
-        android:onClick="launchAddVitals"
-        android:text="@string/add_vital"
+        android:layout_marginTop="196dp"
+        android:onClick="launchVitals"
+        android:text="@string/vital_menu"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/viewVitals"
+        android:id="@+id/contact_menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:onClick="launchViewList"
-        android:text="@string/view_vital_label"
+        android:layout_marginTop="40dp"
+        android:onClick="launchContactMenu"
+        android:text="@string/contact_menu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addVitals" />
-
+        app:layout_constraintTop_toBottomOf="@+id/vital_menu" />
 </androidx.constraintlayout.widget.ConstraintLayout>

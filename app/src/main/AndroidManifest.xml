@@ -3,38 +3,52 @@
     package="com.example.vitalsigns">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="PHMS"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.VitalSigns">
-        <activity android:name=".phone_sms"
-            android:parentActivityName=".Contacts"
-            ></activity>
-        <activity android:name=".view_contacts" />
-        <activity
-            android:name=".create_contact"
-            android:parentActivityName=".Contacts" />
-        <activity
-            android:name=".Contacts"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".ViewVitals"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".AddVitalsActivity"
-            android:parentActivityName=".MainActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".phone_sms"
+            android:label="Calls/Messaging"
+            android:parentActivityName=".Contacts" />
+        <activity android:name=".view_contacts"
+            android:label="View Contacts"
+            android:parentActivityName=".Contacts"
+            />
+        <activity
+            android:name=".create_contact"
+            android:label="Create Contact"
+            android:parentActivityName=".Contacts" />
+        <activity
+            android:name=".Contacts"
+            android:label="Contacts"
+            android:parentActivityName=".MainScreen" />
+        <activity
+            android:name=".ViewVitals"
+            android:label="View Vitals"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AddVitalsActivity"
+            android:label="Add Vitals"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity"
+            android:label="Vitals"
+            android:parentActivityName=".MainScreen">
+
+        </activity>
     </application>
-    <uses-permission android:name="android.permission.CALL_PHONE" />
-    <uses-permission android:name="android.permission.SEND_SMS" />
+
 </manifest>

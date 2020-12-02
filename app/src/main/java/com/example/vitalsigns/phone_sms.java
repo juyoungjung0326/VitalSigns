@@ -42,10 +42,11 @@ public class phone_sms extends AppCompatActivity {
 
         if(checkPermissions(Manifest.permission.SEND_SMS))
         {
-
+            //does nothing. Makes sure we have permission to send sms
         }
         else
         {
+            //requests to have access to sending sms
             ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.SEND_SMS},SEND_SMS_PERMISSION_REQUEST_CODE);
         }
 
