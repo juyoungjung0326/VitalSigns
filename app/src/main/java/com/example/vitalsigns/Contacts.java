@@ -19,4 +19,15 @@ public class Contacts extends AppCompatActivity {
         Intent i = new Intent(this, create_contact.class);
         startActivity(i);
     }
+
+    public void launchViewContacts(View v)
+    {
+        Intent i = new Intent(this, view_contacts.class);
+        startActivity(i);
+    }
+    public void launchCallSMS(View v)
+    {
+        Intent i = new Intent(this,phone_sms.class);
+        startActivity(i);
+    }
 }

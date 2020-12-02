@@ -33,4 +33,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void launchContacts(View v)
+    {
+        Intent i = new Intent(this, Contacts.class);
+        startActivity(i);
+    }
+
 }

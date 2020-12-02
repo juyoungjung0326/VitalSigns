@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.vitalsigns">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,8 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.VitalSigns">
-        <activity android:name=".create_contact"></activity>
-        <activity android:name=".Contacts" />
+        <activity android:name=".phone_sms"
+            android:parentActivityName=".Contacts"
+            ></activity>
+        <activity android:name=".view_contacts" />
+        <activity
+            android:name=".create_contact"
+            android:parentActivityName=".Contacts" />
+        <activity
+            android:name=".Contacts"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ViewVitals"
             android:parentActivityName=".MainActivity" />
@@ -25,5 +35,6 @@
             </intent-filter>
         </activity>
     </application>
-
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
 </manifest>
