@@ -34,7 +34,7 @@ public class ViewVitals extends AppCompatActivity {
         viewList = new VitalSignsDatabase(ViewVitals.this);
 
         //new instance of the adapter to get the data from the database
-        formArrayAdapter = new ArrayAdapter<VitalSigns>(ViewVitals.this, android.R.layout.simple_list_item_1, viewList.getData());
+        formArrayAdapter = new ArrayAdapter<VitalSigns>(ViewVitals.this, R.layout.row2, viewList.getData());
         viewForms.setAdapter(formArrayAdapter);
 
         registerForContextMenu(viewForms);
@@ -63,7 +63,7 @@ public class ViewVitals extends AppCompatActivity {
                 viewList.deleteRow(formChoice);
                 Toast.makeText(this,"Form Deleted",Toast.LENGTH_SHORT).show();
                 //refreshing the screen
-                formArrayAdapter = new ArrayAdapter<VitalSigns>(ViewVitals.this, android.R.layout.simple_list_item_1,viewList.getData());
+                formArrayAdapter = new ArrayAdapter<VitalSigns>(ViewVitals.this, R.layout.row2,viewList.getData());
                 viewForms.setAdapter(formArrayAdapter);
         }
         return super.onContextItemSelected(item);

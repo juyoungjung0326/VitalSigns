@@ -5,7 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:layout_editor_absoluteX="171dp"
-    tools:layout_editor_absoluteY="239dp">
+    tools:layout_editor_absoluteY="239dp"
+    android:background="#273E4C"
+    >
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -21,11 +24,14 @@
             android:id="@+id/vital_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="20dp"
             android:text="@string/vital_name"
+            android:textColor="#ffffff"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="32dp"
+            />
 
         <TextView
             android:id="@+id/temp_title"
@@ -36,7 +42,9 @@
             android:layout_marginTop="12dp"
             android:text="@string/temp_title_form"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/date_field" />
+            app:layout_constraintTop_toBottomOf="@+id/date_field"
+            android:textColor="#ffffff"
+            />
 
         <EditText
             android:id="@+id/temp_field"
@@ -48,7 +56,8 @@
             android:ems="10"
             android:inputType="number"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/temp_title" />
+            app:layout_constraintTop_toBottomOf="@+id/temp_title"
+            android:textColor="#ffffff"/>
 
         <TextView
             android:id="@+id/textView11"
@@ -59,7 +68,8 @@
             android:layout_marginTop="12dp"
             android:text="@string/pulse_label"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/temp_field" />
+            app:layout_constraintTop_toBottomOf="@+id/temp_field"
+            android:textColor="#ffffff"/>
 
         <EditText
             android:id="@+id/pulse_field"
@@ -71,7 +81,8 @@
             android:ems="10"
             android:inputType="number"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+            app:layout_constraintTop_toBottomOf="@+id/textView11"
+            android:textColor="#ffffff"/>
 
         <TextView
             android:id="@+id/textView12"
@@ -82,7 +93,8 @@
             android:layout_marginTop="12dp"
             android:text="@string/bp_title"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/pulse_field" />
+            app:layout_constraintTop_toBottomOf="@+id/pulse_field"
+            android:textColor="#ffffff"/>
 
         <TextView
             android:id="@+id/textView13"
@@ -93,7 +105,8 @@
             android:layout_marginTop="12dp"
             android:text="@string/glucose_title"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/bp_field" />
+            app:layout_constraintTop_toBottomOf="@+id/bp_field"
+            android:textColor="#ffffff"/>
 
         <TextView
             android:id="@+id/textView14"
@@ -104,7 +117,9 @@
             android:layout_marginTop="12dp"
             android:text="@string/chol_title"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/gl_field" />
+            app:layout_constraintTop_toBottomOf="@+id/gl_field"
+            android:textColor="#ffffff"
+            />
 
         <Button
             android:id="@+id/vital_submit"
@@ -127,7 +142,8 @@
             android:ems="10"
             android:inputType="textPersonName"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+            app:layout_constraintTop_toBottomOf="@+id/textView12"
+            android:textColor="#ffffff"/>
 
         <EditText
             android:id="@+id/gl_field"
@@ -139,7 +155,8 @@
             android:ems="10"
             android:inputType="textPersonName"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+            app:layout_constraintTop_toBottomOf="@+id/textView13"
+            android:textColor="#ffffff"/>
 
         <EditText
             android:id="@+id/cl_field"
@@ -151,7 +168,8 @@
             android:ems="10"
             android:inputType="textPersonName"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+            app:layout_constraintTop_toBottomOf="@+id/textView14"
+            android:textColor="#ffffff"/>
 
         <TextView
             android:id="@+id/textView15"
@@ -159,8 +177,9 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="20dp"
             android:text="@string/date_title"
+            android:textColor="#ffffff"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/vital_title" />
 
@@ -174,7 +193,8 @@
             android:ems="10"
             android:inputType="textPersonName"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+            app:layout_constraintTop_toBottomOf="@+id/textView15"
+            android:textColor="#ffffff"/>
 
         <ImageView
             android:id="@+id/help_button"

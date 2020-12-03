@@ -34,7 +34,7 @@ public class view_contacts extends AppCompatActivity {
         contact_list = findViewById(R.id.contact_list);
         viewList = new ContactDatabase(view_contacts.this);
 
-        contactArrayAdapter = new ArrayAdapter<Contact_Class>(view_contacts.this, android.R.layout.simple_list_item_1,viewList.getContacts());
+        contactArrayAdapter = new ArrayAdapter<Contact_Class>(view_contacts.this, R.layout.row,viewList.getContacts());
         contact_list.setAdapter(contactArrayAdapter);
 
         registerForContextMenu(contact_list);
@@ -64,7 +64,7 @@ public class view_contacts extends AppCompatActivity {
             case R.id.delete_id:
                 Contact_Class deleteContact = (Contact_Class)contact_list.getItemAtPosition(info.position);
                 viewList.deleteRow(deleteContact);
-                contactArrayAdapter = new ArrayAdapter<Contact_Class>(view_contacts.this,android.R.layout.simple_list_item_1,viewList.getContacts());
+                contactArrayAdapter = new ArrayAdapter<Contact_Class>(view_contacts.this,R.layout.row,viewList.getContacts());
                 contact_list.setAdapter(contactArrayAdapter);
                 break;
         }

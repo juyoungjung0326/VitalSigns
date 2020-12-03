@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".phone_sms">
+    tools:context=".phone_sms"
+    android:background="#273E4C"
+    >
 
     <TextView
         android:id="@+id/textView"
@@ -15,7 +17,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="#ffffff"
+        android:textSize="32dp"
+        />
 
     <TextView
         android:id="@+id/textView4"
@@ -26,7 +31,9 @@
         android:layout_marginTop="50dp"
         android:text="@string/phone_title"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:textColor="#ffffff"
+        />
 
     <EditText
         android:id="@+id/phone_number"
@@ -36,7 +43,9 @@
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        android:textColor="#ffffff"
+        />
 
     <ImageView
         android:id="@+id/image_call"
@@ -57,7 +66,9 @@
         android:layout_marginTop="36dp"
         android:text="@string/message_title"
         app:layout_constraintStart_toStartOf="@+id/phone_number"
-        app:layout_constraintTop_toBottomOf="@+id/phone_number" />
+        app:layout_constraintTop_toBottomOf="@+id/phone_number"
+        android:textColor="#ffffff"
+        />
 
     <EditText
         android:id="@+id/composed_message"
@@ -69,7 +80,9 @@
         android:maxLength="2000"
         android:maxLines="5"
         app:layout_constraintStart_toStartOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        android:textColor="#ffffff"
+        />
 
     <ImageView
         android:id="@+id/sms_send"
@@ -81,5 +94,7 @@
         android:onClick="sendMessage"
         android:src="@drawable/ic_message"
         app:layout_constraintStart_toEndOf="@+id/composed_message"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        android:textColor="#ffffff"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
